@@ -1,0 +1,31 @@
+services:
+  payment-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: payment-proxy
+    restart: unless-stopped
+    ports:
+      - "8010:8000"
+    env_file:
+      - .env
+    environment:
+      - DEBUG=${DEBUG:-false}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - payment-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  payment-network:
+    driver: bridge
+

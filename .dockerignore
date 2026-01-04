@@ -1,0 +1,81 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+.Python
+
+# Development files
+.env
+.env.*
+*.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+README.fa.md
+*.md
+docs/
+
+# Docker files (not needed in image)
+docker-compose.yml
+docker-compose.*.yml
+Dockerfile.dev
+
+# Testing
+tests/
+test_*.py
+*_test.py
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Deployment configs
+liara.json
+.platform/
+.elasticbeanstalk/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+.cache/
+tmp/
+temp/
