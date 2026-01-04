@@ -48,8 +48,8 @@ ZIBAL_VERIFY_URL=https://gateway.zibal.ir/v1/verify
 ZIBAL_PAYMENT_URL=https://gateway.zibal.ir/start/
 
 # Your Application URLs
-TICKETING_API_URL=https://your-api.example.com
-TICKETING_FRONTEND_URL=https://your-frontend.example.com
+Your_project_API_URL=https://your-api.example.com
+Your_project_FRONTEND_URL=https://your-frontend.example.com
 
 # Security (must match your main API)
 WEBHOOK_SECRET=your_secure_random_secret_key
