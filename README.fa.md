@@ -48,8 +48,8 @@ ZIBAL_VERIFY_URL=https://gateway.zibal.ir/v1/verify
 ZIBAL_PAYMENT_URL=https://gateway.zibal.ir/start/
 
 # آدرس‌های برنامه شما
-TICKETING_API_URL=https://your-api.example.com
-TICKETING_FRONTEND_URL=https://your-frontend.example.com
+Your_Project_URL=https://your-api.example.com
+Your_Project_FRONTEND_URL=https://your-frontend.example.com
 
 # امنیت (باید با API اصلی شما یکسان باشد)
 WEBHOOK_SECRET=your_secure_random_secret_key
@@ -186,8 +186,8 @@ def verify_webhook(data, signature, secret):
 | `ZIBAL_MERCHANT_ID` | شناسه merchant زیبال شما | بله | `zibal` |
 | `ZIBAL_VERIFY_URL` | endpoint تأیید زیبال | خیر | `https://gateway.zibal.ir/v1/verify` |
 | `ZIBAL_PAYMENT_URL` | آدرس درگاه پرداخت زیبال | خیر | `https://gateway.zibal.ir/start/` |
-| `TICKETING_API_URL` | آدرس پایه API اصلی شما | بله | - |
-| `TICKETING_FRONTEND_URL` | آدرس پایه frontend شما | بله | - |
+| `Your_Project_API_URL` | آدرس پایه API اصلی شما | بله | - |
+| `Your_Project_FRONTEND_URL` | آدرس پایه frontend شما | بله | - |
 | `WEBHOOK_SECRET` | کلید مشترک برای امضاهای HMAC | بله | - |
 | `DEBUG` | فعال‌سازی حالت debug | خیر | `false` |
 
@@ -222,7 +222,7 @@ heroku create your-app-name
 
 # تنظیم متغیرهای محیطی
 heroku config:set ZIBAL_MERCHANT_ID=your_merchant_id
-heroku config:set TICKETING_API_URL=https://your-api.com
+heroku config:set Your_Project_API_URL=https://your-api.com
 # ... تنظیم سایر متغیرها
 
 # استقرار
