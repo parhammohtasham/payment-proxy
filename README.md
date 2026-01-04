@@ -186,8 +186,8 @@ def verify_webhook(data, signature, secret):
 | `ZIBAL_MERCHANT_ID` | Your Zibal merchant ID | Yes | `zibal` |
 | `ZIBAL_VERIFY_URL` | Zibal verification endpoint | No | `https://gateway.zibal.ir/v1/verify` |
 | `ZIBAL_PAYMENT_URL` | Zibal payment gateway URL | No | `https://gateway.zibal.ir/start/` |
-| `TICKETING_API_URL` | Your main API base URL | Yes | - |
-| `TICKETING_FRONTEND_URL` | Your frontend base URL | Yes | - |
+| `Your_Project_API_URL` | Your main API base URL | Yes | - |
+| `Your_Project_FRONTEND_URL` | Your frontend base URL | Yes | - |
 | `WEBHOOK_SECRET` | Shared secret for HMAC signatures | Yes | - |
 | `DEBUG` | Enable debug mode | No | `false` |
 
@@ -222,7 +222,7 @@ heroku create your-app-name
 
 # Set environment variables
 heroku config:set ZIBAL_MERCHANT_ID=your_merchant_id
-heroku config:set TICKETING_API_URL=https://your-api.com
+heroku config:set Your_Project_API_URL=https://your-api.com
 # ... set other variables
 
 # Deploy
